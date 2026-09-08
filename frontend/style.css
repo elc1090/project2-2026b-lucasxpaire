@@ -52,7 +52,7 @@ main {
     position: relative;
 }
 
-#blocklyDiv {
+#workspace {
     position: absolute;
     top: 0;
     left: 0;
