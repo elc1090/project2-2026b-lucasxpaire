@@ -73,10 +73,8 @@ const workspaceConfig = {
 
 export default function BlocklyComponent({ onChange }: BlocklyProps) {
     return (
-        <BlocklyWorkspace
-            className="workspace-container"
-            toolboxConfiguration={toolboxConfig}
-            workspaceConfiguration={workspaceConfig}
+        <BlocklyWorkspace className="container-lousa"
+            toolboxConfiguration={toolboxConfig} workspaceConfiguration={workspaceConfig}
             onWorkspaceChange={(workspace) => {
                 const codigoConvertido = javascriptGenerator.workspaceToCode(workspace)
                 const jsonConvertido = Blockly.serialization.workspaces.save(workspace);

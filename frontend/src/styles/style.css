@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.container-principal {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.cabecalho {
+  background-color: #3f51b5;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.grupo-botoes {
+  display: flex;
+  gap: 10px;
+}
+
+.campo-apelido {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.botao {
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.botao-testar {
+  background-color: #4caf50;
+}
+
+.botao-testar:hover {
+  background-color: #43a047;
+}
+
+.botao-enviar {
+  background-color: #ff4081;
+}
+
+.botao-enviar:hover {
+  background-color: #e91e63;
+}
+
+.area-principal {
+  flex-grow: 1;
+  position: relative;
+}
+
+.container-lousa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
