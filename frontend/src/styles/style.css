@@ -63,6 +63,14 @@ body {
   background-color: #e91e63;
 }
 
+.botao-estatisticas {
+  background-color: #2196f3
+}
+
+.botao-estatisticas:hover {
+  background-color: #156fb9
+}
+
 .area-principal {
   flex-grow: 1;
   position: relative;

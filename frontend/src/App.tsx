@@ -36,6 +36,7 @@ function App() {
           <input type="text" placeholder="Digite seu nome de jogador" value={nomeJogador} onChange={(e) => setNomeJogador(e.target.value)} className="campo-nome" />
           <button onClick={testarCodigo} className="botao botao-testar">Testar Código</button>
           <button onClick={enviarEstatistica} className="botao botao-enviar">Enviar Resposta</button>
+          <button onClick={abrirEstatisticas} className="botao botao-estatisticas">Estatísticas</button>
         </div>
       </header>
       <main className="area-principal">
