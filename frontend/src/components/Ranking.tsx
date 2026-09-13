@@ -16,17 +16,17 @@ export default function Ranking({ dados, onFechar }: RankingProps) {
                             <th>Jogador</th>
                             <th>Desafio</th>
                             <th>Tentativas</th>
-                            <th>Blocos</th>
+                            <th>Blocos Usados</th>
                         </tr>
                     </thead>
                     <tbody>
                         {dados.length > 0 ? (
                             dados.map((est) => (
                                 <tr key={est.id}>
-                                    <td className="centralizado">{est.nomeJogador}</td>
-                                    <td className="centralizado">{est.desafio}</td>
-                                    <td className="centralizado">{est.tentativas}</td>
-                                    <td className="centralizado">{est.blocosUsados}</td>
+                                    <td>{est.nomeJogador}</td>
+                                    <td>{est.desafio}</td>
+                                    <td>{est.tentativas}</td>
+                                    <td>{est.blocosUsados}</td>
                                 </tr>
                             ))
                         ) : (
