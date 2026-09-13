@@ -17,7 +17,7 @@ function App() {
 
   const enviarEstatistica = () => {
     if (!nomeJogador) {
-      alert("Por favor, digite seu apelido antes de enviar!");
+      alert("Por favor, digite seu nome de jogador antes de enviar!");
       return;
     }
 
@@ -31,9 +31,9 @@ function App() {
   return (
     <div className="container-principal">
       <header className="cabecalho">
-        <h1>Desafio: Lógica de Programação</h1>
+        <h1>Lógica de programação</h1>
         <div className="grupo-botoes">
-          <input type="text" placeholder="Digite seu apelido" value={nomeJogador} onChange={(e) => setNomeJogador(e.target.value)} className="campo-apelido" />
+          <input type="text" placeholder="Digite seu nome de jogador" value={nomeJogador} onChange={(e) => setNomeJogador(e.target.value)} className="campo-nome" />
           <button onClick={testarCodigo} className="botao botao-testar">Testar Código</button>
           <button onClick={enviarEstatistica} className="botao botao-enviar">Enviar Resposta</button>
         </div>
