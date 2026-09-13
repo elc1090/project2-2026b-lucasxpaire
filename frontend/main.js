@@ -41,6 +41,21 @@ document.addEventListener("DOMContentLoaded", function () {
                     { "kind": "block", "type": "math_number" },
                     { "kind": "block", "type": "math_arithmetic" }
                 ]
+            },
+            {
+                "kind": "category",
+                "name": "Texto",
+                "colour": "%{BKY_TEXTS_HUE}",
+                "contents": [
+                    { "kind": "block", "type": "text" },
+                    { "kind": "block", "type": "text_print" }
+                ]
+            },
+            {
+                "kind": "category",
+                "name": "Variáveis",
+                "custom": "VARIABLE",
+                "colour": "%{BKY_VARIABLES_HUE}"
             }
         ]
     };
