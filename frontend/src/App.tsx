@@ -38,7 +38,7 @@ function App() {
     }
 
     const estatistica = {
-      jogador: nomeJogador,
+      nomeJogador: nomeJogador,
       desafio: desafioAtual,
       tentativas: tentativas,
       blocosUsados: quantidadeBlocos,
