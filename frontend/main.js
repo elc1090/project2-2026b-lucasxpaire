@@ -77,7 +77,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
         console.log("Apelido do Jogador:", nickname);
         console.log("JSON:", JSON.stringify(state));
+    });
 
+    var btnRun = document.getElementById('btn-run');
+    btnRun.addEventListener('click', function () {
+        var code = javascript.javascriptGenerator.workspaceToCode(workspace);
+        try {
+            eval(code);
+        } catch (e) {
+            alert("Ops! Houve um erro na lógica: " + e);
+        }
     });
 
 });
