@@ -59,12 +59,17 @@ function App() {
     }
   };
 
+  const tratarMudancaDesafio = (novoDesafio: string) => {
+    setDesafioAtual(novoDesafio);
+    setTentativas(0);
+  };
+
   return (
     <div className="container-principal">
       <header className="cabecalho">
         <h1>Lógica de programação</h1>
         <div className="grupo-botoes">
-          <select value={desafioAtual} onChange={(e) => setDesafioAtual(e.target.value)} className="campo-desafio">
+          <select value={desafioAtual} onChange={(e) => tratarMudancaDesafio(e.target.value)} className="campo-desafio">
             <option value="Printe seu nome">Desafio 1: Printe seu nome</option>
             <option value="Mostre a palavra 'Olá Mundo'">Desafio 2: Olá Mundo</option>
             <option value="Printe o número 4">Desafio 3: A soma de 2+2</option>
