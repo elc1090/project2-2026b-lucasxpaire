@@ -1,12 +1,11 @@
 import { BlocklyWorkspace } from 'react-blockly';
-import * as Blockly from 'blockly';
 import { javascriptGenerator } from 'blockly/javascript';
 
 interface BlocklyProps {
-    onChange: (codigoJS: string, blocosJSON: any) => void;
+    onChange: (codigoJS: string, totalBlocos: number) => void;
 }
 
-const toolboxConfig = {
+const config = {
     "kind": "categoryToolbox",
     "contents": [
         {
@@ -73,12 +72,13 @@ const workspaceConfig = {
 
 export default function BlocklyComponent({ onChange }: BlocklyProps) {
     return (
-        <BlocklyWorkspace className="container-lousa"
-            toolboxConfiguration={toolboxConfig} workspaceConfiguration={workspaceConfig}
+        <BlocklyWorkspace
+            className="container-lousa"
+            toolboxConfiguration={config} workspaceConfiguration={workspaceConfig}
             onWorkspaceChange={(workspace) => {
                 const codigoConvertido = javascriptGenerator.workspaceToCode(workspace)
-                const jsonConvertido = Blockly.serialization.workspaces.save(workspace);
-                onChange(codigoConvertido, jsonConvertido);
+                const numeroDeBlocos = workspace.getAllBlocks(false).length;
+                onChange(codigoConvertido, numeroDeBlocos);
             }}
         />
     );

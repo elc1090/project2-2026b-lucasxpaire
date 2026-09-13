@@ -5,7 +5,6 @@ import BlocklyComponent from './components/Blockly';
 
 function App() {
   const [codigoJS, setCodigoJS] = useState("");
-  const [blocosJSON, setBlocosJSON] = useState({});
   const [nomeJogador, setNomeJogador] = useState("");
 
   const [tentativas, setTentativas] = useState(0);
@@ -76,7 +75,9 @@ function App() {
         </div>
       </header>
       <main className="area-principal">
-        <BlocklyComponent onChange={(codigo, json) => { setCodigoJS(codigo); setBlocosJSON(json) }} />
+        <BlocklyComponent onChange={(codigo, totalBlocos) => {
+          setCodigoJS(codigo); setQuantidadeBlocos(totalBlocos);
+        }} />
       </main>
     </div>
   )
