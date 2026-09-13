@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.20.0",
     "blockly": "^13.3.0",
     "react": "^19.2.8",
     "react-blockly": "^9.0.0",
