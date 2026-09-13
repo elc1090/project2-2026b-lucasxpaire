@@ -7,7 +7,12 @@ function App() {
   const [blocosJSON, setBlocosJSON] = useState({});
   const [nomeJogador, setNomeJogador] = useState("");
 
+  const [tentativas, setTentativas] = useState(0);
+  const [quantidadeBlocos, setQuantidadeBlocos] = useState(0);
+  const desafioAtual = "Printe seu nome";
+
   const testarCodigo = () => {
+    setTentativas(tentativas + 1);
     try {
       eval(codigoJS);
     } catch (e) {
@@ -23,7 +28,9 @@ function App() {
 
     const estatistica = {
       jogador: nomeJogador,
-      blocosUsados: blocosJSON,
+      desafio: desafioAtual,
+      tentativas: tentativas,
+      blocosUsados: quantidadeBlocos,
       data: new Date().toISOString()
     };
   };
