@@ -52,6 +52,7 @@ function App() {
   const abrirEstatisticas = async () => {
     try {
       const dados = await api.listar();
+      dados.sort((a, b) => a.tentativas - b.tentativas || a.blocosUsados - b.blocosUsados);
       setDadosRanking(dados);
       setMostrarRanking(true);
     } catch (e) {
