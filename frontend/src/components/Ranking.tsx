@@ -13,6 +13,7 @@ export default function Ranking({ dados, onFechar }: RankingProps) {
                 <table className="tabela-ranking">
                     <thead>
                         <tr>
+                            <th>Data</th>
                             <th>Jogador</th>
                             <th>Desafio</th>
                             <th>Tentativas</th>
@@ -23,6 +24,7 @@ export default function Ranking({ dados, onFechar }: RankingProps) {
                         {dados.length > 0 ? (
                             dados.map((est) => (
                                 <tr key={est.id}>
+                                    <td>{new Date(est.data).toLocaleDateString('pt-BR')}</td>
                                     <td>{est.nomeJogador}</td>
                                     <td>{est.desafio}</td>
                                     <td>{est.tentativas}</td>
@@ -31,7 +33,7 @@ export default function Ranking({ dados, onFechar }: RankingProps) {
                             ))
                         ) : (
                             <tr>
-                                <td colSpan={4} className="centralizado">Nenhuma estatística encontrada.</td>
+                                <td colSpan={5} className="centralizado">Nenhuma estatística encontrada.</td>
                             </tr>
                         )}
                     </tbody>
