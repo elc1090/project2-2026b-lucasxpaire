@@ -5,7 +5,7 @@
 ## Acesso
 
 O projeto está hospedado no Render:
-**URL:** [https://blockly-frontend.onrender.com/](https://blockly-frontend.onrender.com/)
+**URL:** [https://bockly-frontend.onrender.com/](https://bockly-frontend.onrender.com/)
 
 
 ## Desenvolvedor(a)
