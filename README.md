@@ -22,7 +22,16 @@ Criar uma ferramenta educacional para crianças aprenderem lógica de programaç
 - Parceria Dev: Giovana Borelli 
 
 ## Feedback/comentário da parceria/cliente/usuário
-(texto da giovana)
+
+Comentário da Giovana:
+
+As principais diferenças percebidas no código estão na organização do fluxo do código e no formato de de organização.
+
+No frontend, o Lucas utiliza React com Typescript, o qual está manipulando diversos arquivos em conjunto. Cada funcionalidade está bem separada em pastas e arquivos, mantendo a lógica de desenvolvimento compartimentalizada, mesmo que focada no App.tsx. Em contraste, o meu possui separações claras entre HTML, CSS e JavaScript, ainda que o JavaScript possua mais funções para a injeção e o manuseio da biblioteca Blockly. Comparando a interface dos projetos, o do Lucas utiliza a tela completamente, facilitando a compreensão de cada parte do software, com separações bem definidas. 
+
+No backend, o Lucas precisou utilizar novamente diversas pastas para a organização do código, guardando-os em nichos. Além disso, percebe-se uma grande diferença no paradigma das linguagens: Java, com a orientação a objetos, precisa de diversas funções de tipagem, enquanto o Python guarda cada objeto em bibliotecas e listas.
+
+No banco de dados, percebi que o Lucas utiliza Promise, fazendo com que o usuário possa rapidamente continuar a interagir com o aplicativo. No meu código, é necessário esperar o retorno do PostgreSQL.
 
 ## Desenvolvimento
 
